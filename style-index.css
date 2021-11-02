@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 65.5%;
+}
+
+body {
+    font-size: 2.5rem;
+}
+
+.container {
+    background-color: darkred;
+    width: 80%;
+    margin: auto;
+}
+
+.ib {
+    display: inline-block;
+    padding: 2rem;
+}
+
+#ib1 {
+    width: 40%;
+    background-color: yellow;
+    border: solid black 1px;
+}
+
+#ib2, #ib3 {
+    width: 20%;
+}
+
+#ib2 {
+    background-color: pink;
+    border: black dashed 1px;
+}
+
+#ib3 {
+    background-color: blue;
+    border: white 1px dotted;
+}
+
+/*mobile version
+
+**600px
+*/
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    #ib1, #ib2, #ib3 {
+        width: 100%;
+    }
+}
+
+
+/*350px*/
+@media screen and (max-width: 350px) {
+    #ib3, a, span {
+        display: none;
+    }
+}
